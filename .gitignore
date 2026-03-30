@@ -1,0 +1,16 @@
+# Antigravity Customization: Secret & Personal Exclusions
+google_accounts.json
+oauth_creds.json
+installation_id
+state.json
+trustedFolders.json
+history/
+antigravity/
+antigravity-browser-profile/
+projects.json
+learnings.md
+*.log
+temp/
+tmp/
+.DS_Store
+Thumbs.db
