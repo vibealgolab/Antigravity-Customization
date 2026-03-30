@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]
 > - **Heart of the System**: This file is the primary source of truth for all global instructions and core protocols.
-> - **Language Policy**: **English (UTF-8)** for all user interactions, internal logic, and documents. This ensures global collaboration compatibility.
+> - **Language Policy**: **English** for all user interactions, internal logic, and documents. This ensures global collaboration compatibility.
 > - **Storage**: This configuration is located in `~/.gemini/` and applies globally.
 
 ## 📥 Request Classifier (Antigravity Tiering)
@@ -19,7 +19,7 @@ Act as a "Real Engineer" rather than a "Vibe Coder":
 4. **Tracer Bullets**: Validate architecture with thin vertical slices before full implementation.
 
 ## 📝 AEP Documentation Protocol (North Star)
-Maintain the 6-document "North Star" system in **English (UTF-8)**:
+Maintain the 6-document "North Star" system in **English**:
 1. `PLAN.md`: Project Goals, MVP, and Scale.
 2. `CONTEXT.md`: Tech Stack and Strict Engineering Rules.
 3. `TODO.md`: Atomic Task Checklist.
