@@ -1,9 +1,20 @@
 ---
-description: Initialize/Update the "North Star" documents (PLAN, CONTEXT, TODO, STYLE, DEBUG, FLOW) and sync with global memory.
+description: Initialize or Update AEP 2.0 North Star Documents
 ---
 
-1. **Memory Check**: Search the global `learnings.md` for past successes/failures related to the current project and incorporate them into the design.
-2. **Context Integrity**: Verify the existence of the 6 "North Star" documents in the root and create them from standard templates if missing. (English UTF-8).
-3. **Strategic Alignment**: Use the `/verify-intent` skill to clarify the user's intent and analyze potential risks.
-4. **Synchronize**: Update all documents based on the user's latest request and the current code state.
-5. **Issue Extraction**: Extract the first available "Atomic Vertical Slice" from the updated `TODO.md` and propose it to the user.
+# /aep-plan
+
+This workflow maintains the "North Star" 6-document system that guides the project's strategy, context, and execution in Korean (UTF-8).
+
+## Instructions
+1. **Analyze Context**: Understand the current project phase (Init, Implementation, Refactor).
+2. **Review Documents**: 중요 마일스톤 완료 시 또는 사용자의 명시적 요청 시(On-demand) 다음 6개 문서를 점검 및 업데이트한다:
+   - `PLAN.md`: Strategic goals, MVPs, and long-term scaling path.
+   - `CONTEXT.md`: Tech stack, structural rules, and engineering constraints.
+   - `TODO.md`: Atomic checklist for features and bug fixes.
+   - `STYLE_GUIDE.md`: UI/UX patterns and coding standards.
+   - `DEBUG_LOG.md`: Mistake notes, troubleshooting history, and learnings.
+   - `FLOW_SKETCH.md`: Visual-text mappings of data flows and logic.
+3. **Consistency Check**: 정보의 일관성을 유지하되, 매 수정마다 모든 문서를 동기화하려 하여 루프에 빠지지 않도록 주의한다.
+4. **Output**: Update these files directly in Korean (UTF-8). Summarize only the critical changes to the user.
+5. **Conclusion**: 이 문서들은 프로젝트의 'North Star' 역할을 하며, 작업이 모호할 때만 심층 재검토한다. 루틴한 작업 시에는 업데이트를 생략할 수 있다.

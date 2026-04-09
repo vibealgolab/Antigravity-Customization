@@ -1,18 +1,24 @@
-# Logic Harness Skill (TDD)
+# Logic Harness Skill (TDD & Precision Review)
 
-This skill enables the agent to build a **Logic Harness (Self-Validation)** through a Red-Green-Refactor loop to ensure correctness and stability.
+This skill enables the agent to build a **Logic Harness (Self-Validation)** through a Red-Green-Refactor loop and perform **Precision Reviews** focused on provable bugs.
 
 ## Instructions
 
-- **Interface First**: Define the interface and expected behavior of the feature through tests before writing the implementation code.
-- **Red-Green-Refactor Loop (Mandatory)**:
-    - **🔴 Red**: Write a failing test case that verifies the desired functionality.
-    - **🟢 Green**: Write only the **minimum code** required to make the test pass.
-    - **🔵 Refactor**: Improve code quality, readability, and architecture while keeping the test status green.
-- **Deep Module Focus**: Keep interfaces thin and logic deep to improve testability and module independence.
-- **Test Artifacts**: Treat test code as a permanent asset for regression testing.
-- **Feedback Loop**: Use test results as immediate feedback for the agent to prevent hallucinations.
+- **Interface First**: Define the interface and expected behavior through tests before writing implementation code.
+- **Red-Green-Refactor Loop**:
+    - **🔴 Red**: Write a failing test case for the desired functionality.
+    - **🟢 Green**: Write the **minimum code** required to make the test pass.
+    - **🔵 Refactor**: Improve code quality and architecture while maintaining green tests.
+- **Precision Review (Codex-inspired)**:
+    - Focus strictly on **Provable Bugs** (logic errors, security vulnerabilities, performance regressions).
+    - Exclude stylistic preferences (Nits) unless they violate the `STYLE_GUIDE.md`.
+    - **Structured Feedback**: Organize review results using JSON format:
+        - `title`: Desciptive title of the issue.
+        - `priority`: P0 (Critical), P1 (High), P2 (Medium), P3 (Low/Nit).
+        - `confidence`: (0.0 to 1.0).
+        - `location`: File path and line range.
+        - `suggestion`: Concrete refactoring or fix proposal.
 
 ## Usage
 
-Invoke this skill when using `/logic-harness` or when asked to "implement with tests" or "write unit tests".
+Invoke this skill for Tier 3 requests or when "Logic Harness", "TDD", or "Precision Review" is mentioned.
