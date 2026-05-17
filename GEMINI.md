@@ -10,7 +10,7 @@
 ## 📥 Request Classifier (Antigravity Tiering)
 Every request must be classified and handled accordingly:
 - **Tier 0 (Information/Investigation)**: "Explain," "Analyze." Responses are provided directly without complex planning.
-- **Tier 1 (Routine Edit)**: "Fix this function," "Add logging," "Minor tweak." **Skip Planning Mode and North Star updates**; apply changes immediately. Record actions in `DEBUG_LOG.md`.
+- **Tier 1 (Routine Edit)**: "Fix this function," "Add logging," "Minor tweak." **Skip Planning Mode and North Star updates**; apply changes immediately. Record actions in `DEBUG_LOG.html`.
 - **Tier 2 (Complex Implementation)**: "Build," "Refactor," "Add feature." Use the system's `implementation_plan.md` as the primary plan, operating complementarily with the AEP `task.md`.
 - **Tier 3 (Precision Review & Quality Gate)**: "Review," "Validate," "Secure." Perform precision analysis and autonomous correction loops. Execute `/verify-intent` if necessary.
 
@@ -22,15 +22,16 @@ Act as a "Real Engineer" rather than a "Vibe Coder":
 4. **Tracer Bullets**: Validate architecture with thin vertical slices before full implementation.
 5. **Provable Correctness**: During review, focus on Provable Bugs and exclude minor style issues (Nits).
 6. **Persona Separation**: Separate "Implementer" and "Reviewer" personas for a cross-review loop.
+7. **Direct Inspection Guard (No Guessing)**: Never guess or assume about bugs or system behavior. Always inspect files directly using tools (view_file, grep_search, etc.), trace the execution logic to identify the root cause, and report detailed findings before taking any corrective actions.
 
 ## 📝 AEP Documentation Protocol (North Star)
-Maintain the 6-document "North Star" system. These documents are updated **on-demand or upon completion of major milestones**, rather than being mandatory for every minor edit.
-1. `PLAN.md`: Strategic Goals & MVP. (Maintains high-level direction only)
-2. `CONTEXT.md`: Tech Stack & Constraints.
-3. `TODO.md`: Atomic Task Checklist. (The main TODO during execution)
-4. `STYLE_GUIDE.md`: UI/UX and Code Style Preferences.
-5. `DEBUG_LOG.md`: Troubleshooting and Learning History (Mistake Notes).
-6. `FLOW_SKETCH.md`: Data and Logic Flow visualization in text.
+Maintain the 6-document "North Star" system. All user-facing documents MUST be written in beautifully styled, standalone HTML format (`.html`) instead of Markdown (`.md`) to maximize readability. CSS styles must feature responsive, premium dark glassmorphism layouts. These documents are updated **on-demand or upon completion of major milestones**, rather than being mandatory for every minor edit.
+1. `PLAN.html`: Strategic Goals & MVP in structured timeline cards.
+2. `CONTEXT.html`: Tech Stack, constraints, and architecture diagrams.
+3. `TODO.html`: Atomic task checklist with progress bars and status badges.
+4. `STYLE_GUIDE.html`: UI/UX standards with color palettes and real-time element styling.
+5. `DEBUG_LOG.html`: Timeline-based troubleshooting history and detailed learnings.
+6. `FLOW_SKETCH.html`: Visual SVG or Mermaid integrations of data and logic flow.
 
 ## ⚡ Slash Commands (AEP Workflows)
 Invoke these commands using `/` in the chat to trigger specialized agentic workflows:
@@ -38,7 +39,7 @@ Invoke these commands using `/` in the chat to trigger specialized agentic workf
 - `/verify-intent`: Start strategic intent/design verification (Socratic Gate).
 - `/write-spec`: Create a detailed Technical Specification / PRD.
 - `/slice-task`: Decompose specs into actionable vertical slices (Issues).
-- `/aep-wrapup`: Capture feedback and update global `learnings.md`.
+- `/aep-wrapup`: Capture feedback and update global `learnings.html`.
 - `/deepen-module`: System-wide architecture deepening and module refactoring.
 
 ## 🛠️ Specialist Skills (AEP Skills)
