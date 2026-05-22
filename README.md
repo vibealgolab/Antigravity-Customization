@@ -7,33 +7,34 @@ This repository contains a specialized set of global configurations (rules, skil
 
 ---
 
-## 🚀 Version 1.1: Optimization & Stability Update
+## 🚀 Version 2.0: HTML-First & Long-term Memory Upgrade
 
-The latest version (v1.1) focuses on resolving "infinite loops" and improving execution speed by introducing a more flexible and intelligent protocol.
+The latest version (v2.0) introduces a monumental shift in how the agent presents information and retains context, achieving the ultimate synergy between the engineer and the agent.
 
 ### Key Improvements:
-*   **Loop Prevention Strategy**: "North Star" documents (PLAN, TODO, etc.) are now updated **on-demand** or upon milestone completion, preventing the agent from getting stuck in repetitive planning cycles.
-*   **Selective Socratic Gate**: Strategic interviewing (`/verify-intent`) is now conditional. It is skipped if a plan already exists or if requirements are sufficiently clear, allowing for **immediate execution**.
-*   **AEP 2.0 Tiering System**: Requests are categorized into Tier 0 (Simple) through Tier 3 (Precision Review), optimizing resource allocation and response depth.
-*   **Performance Tuning**: Compacted core workflows into 8 essential steps to reduce cognitive load and processing overhead.
+*   **HTML-First North Star System**: All user-facing documents (`PLAN`, `CONTEXT`, `TODO`, `STYLE_GUIDE`, `DEBUG_LOG`, `FLOW_SKETCH`) are written in beautifully styled, interactive standalone HTML (`.html`) structures featuring responsive dark glassmorphism layouts. Markdown formats are deprecated for user-facing assets.
+*   **Dual Language Policy (언어 이원화)**: Internal agent instructions (workflows, skills, code) are strictly written in **English**, while all chat interactions and North Star documents are maintained in **Korean (UTF-8)** to ensure smooth communication.
+*   **Direct Inspection Guard (No Guessing)**: Explicitly prohibits "vibe coding" and guesswork. Agents must inspect files directly using tools, trace execution logic, and diagnose the precise root cause before suggesting any changes.
+*   **Enhanced Memory Scaffolding**: Leverages `learnings.html` and project `DEBUG_LOG.html` as external resident memory to retain knowledge across sessions and prevent regressions.
 
 ---
 
 ## 🛠️ Professional Engineering Skills (AEP Skills)
 
-*   **`/verify-intent`**: Strategic intent verification through Socratic dialogue to surface "Unknown Unknowns."
-*   **`/write-spec`**: Technical specification drafting focused on AI alignment and vertical slicing.
-*   **`/slice-task`**: Decomposition of complex specs into atomic, independently verifiable tasks.
-*   **`/logic-harness`**: Autonomous logic validation through a strict Red-Green-Refactor TDD loop.
-*   **`/deepen-module`**: Structural optimization to reduce cognitive load by building "Deep Modules."
+*   **`/verify-intent`**: Strategic intent verification Socratic gate to clarify requirements and design trade-offs.
+*   **`/write-spec`**: Generates a detailed Technical Specification or PRD as a styled `specification.html`.
+*   **`/slice-task`**: Decomposes specs into actionable, testable vertical slices (Issues) and adds them to `TODO.html`.
+*   **`/logic-harness`**: Drives autonomous validation using strict TDD (Red-Green-Refactor).
+*   **`/deepen-module`**: Structural refactoring to simplify interfaces and hide internal complexity ("Deep Modules").
+*   **`/aep-review`**: Tier 3 Precision Review and Quality Gate harness focused on Provable Correctness.
 
 ---
 
 ## 🔄 Integrated Workflows (AEP Workflows)
 
-*   **`/aep-init`**: One-touch initialization to link global configurations and synchronize state to a new workspace.
-*   **`/aep-plan`**: Precision design workflow that incorporates past lessons and verifies intent before execution.
-*   **`/aep-wrapup`**: Knowledge extraction process to summarize results and update the global `learnings.md`.
+*   **`/aep-init`**: One-touch workspace linking using Windows Junctions (`mklink /J`) to establish instant sync with the global configuration.
+*   **`/aep-plan`**: Precision strategic planning to initialize or update the HTML-First North Star documents.
+*   **`/aep-wrapup`**: Knowledge extraction process to append insights to global `learnings.html` and project `DEBUG_LOG.html`.
 
 ---
 
