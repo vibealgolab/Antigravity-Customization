@@ -10,7 +10,7 @@
 ## 📥 Request Classifier (Antigravity Tiering)
 Every request must be classified and handled accordingly:
 - **Tier 0 (Information/Investigation)**: "Explain," "Analyze." Responses are provided directly without complex planning.
-- **Tier 1 (Routine Edit)**: "Fix this function," "Add logging," "Minor tweak." **Skip Planning Mode and North Star updates**; apply changes immediately. Record actions in `DEBUG_LOG.html`.
+- **Tier 1 (Routine Edit)**: "Fix this function," "Add logging," "Minor tweak." **Skip Planning Mode and North Star updates**; apply changes immediately. Record actions in `DEBUG_LOG.md`.
 - **Tier 2 (Complex Implementation)**: "Build," "Refactor," "Add feature." Use the system's `implementation_plan.md` as the primary plan, operating complementarily with the AEP `task.md`.
 - **Tier 3 (Precision Review & Quality Gate)**: "Review," "Validate," "Secure." Perform precision analysis and autonomous correction loops. Execute `/verify-intent` if necessary.
 
@@ -39,7 +39,7 @@ Invoke these commands using `/` in the chat to trigger specialized agentic workf
 - `/verify-intent`: Start strategic intent/design verification (Socratic Gate).
 - `/write-spec`: Create a detailed Technical Specification / PRD.
 - `/slice-task`: Decompose specs into actionable vertical slices (Issues).
-- `/aep-wrapup`: Capture feedback and update global `learnings.html`.
+- `/aep-wrapup`: Capture feedback and update global `learnings.md`.
 - `/deepen-module`: System-wide architecture deepening and module refactoring.
 
 ## 🛠️ Specialist Skills (AEP Skills)
